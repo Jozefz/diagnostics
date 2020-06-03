@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HOME</title>
+	<meta charset="utf-8"/>	
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+	<body>
+		<header>
+		<center>
+		<nav id=nav>
+		<ul>
+			<h2><li><a href="home.html">HOME</a>
+				<a href="contactme.html">CONTACT US</a>
+				<a href="aboutmybusiness.html">ABOUT US</a>
+				<a href="diagvid.html">SEEING US IN ACTION</a></li></h2>
+		</ul>
+		</nav></center>
+		<center><h1>JOZEFZ DIAGNOSTICS</h1></center>
+		<h3><center>"ADORING YOUR VEHICLE'S NEEDS"</center></h3>
+		<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="swayne">
+    <div class="numbertext">1/ 13</div>
+    <img src="prettyfinger.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+  <div class="swayne">
+    <div class="numbertext">2 / 13</div>
+    <img src="car1.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+  <div class="swayne">
+    <div class="numbertext">3 / 13</div>
+    <img src="blackcar.jpeg" style="width:100">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+  <div class="swayne">
+    <div class="numbertext">4 / 13</div>
+    <img src="metre.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+  <div class="swayne">
+    <div class="numbertext">5 / 13</div>
+    <img src="dirtycar.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+  <div class="swayne">
+    <div class="numbertext">6 / 13</div>
+    <img src="metre2.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+  <div class="swayne">
+    <div class="numbertext">7 / 13</div>
+    <img src="prettyblackcar.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+  <div class="swayne">
+    <div class="numbertext">8 / 13</div>
+    <img src="blue.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+  <div class="swayne">
+    <div class="numbertext">9 / 13</div>
+    <img src="somewhatcleancar.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+  <div class="swayne">
+    <div class="numbertext">10 / 13</div>
+    <img src="scan1.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+  <div class="swayne">
+    <div class="numbertext">11 / 13</div>
+    <img src="scan2.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+   <div class="swayne">
+    <div class="numbertext">12 / 13</div>
+    <img src="whitecar.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+   <div class="swayne">
+    <div class="numbertext">13 / 13</div>
+    <img src="scan3.jpeg" style="width:100%">
+    <div class="text">JOZEFZ DIAGNOSTICS</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+</div>
+</header>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("swayne");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+	</body>
+
+		</html>
